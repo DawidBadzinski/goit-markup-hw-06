@@ -942,6 +942,11 @@ button:focus {
     justify-content: flex-end;
   }
 
+  .menu-ham-button {
+    background-color: #fff;
+    border: none;
+  }
+
   .menu-hamburger {
     position: fixed;
     top: 0;
