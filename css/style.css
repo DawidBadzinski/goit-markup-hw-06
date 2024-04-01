@@ -383,7 +383,6 @@ button:focus {
 }
 
 .portfolio-box {
-  width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -806,6 +805,11 @@ button:focus {
     height: 432px;
     align-items: center;
     display: flex;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/heroimage-mobile@1x.jpg);
   }
 
   .heading-solutions {
@@ -829,7 +833,6 @@ button:focus {
   }
 
   .attributes-image {
-    position: absolute;
     visibility: hidden;
   }
 
@@ -968,12 +971,14 @@ button:focus {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 48px;
+    padding: 0;
   }
 
   .menu.ham {
     flex-direction: column;
     padding: 0;
     gap: 40px;
+    display: flex;
   }
 
   .contact-menu.ham {
@@ -1011,5 +1016,319 @@ button:focus {
     width: 288px;
     min-height: 623px;
     padding: 72px 16px 24px 16px;
+  }
+
+  .link-modal {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 767px) and (min-resolution: 192dpi) {
+  .solutions {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/heroimage-mobile@2x.jpg);
+  }
+}
+
+/*--TABLET--*/
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .menu-hamburger,
+  .menu-ham-button {
+    display: none;
+  }
+
+  .contact-menu {
+    padding-left: 121px;
+    display: block;
+    padding-bottom: 16px;
+    padding-top: 0;
+  }
+
+  .link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+  }
+
+  .solutions {
+    padding: 112px 0;
+    max-width: 100%;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/heroimage-tablet@1x.jpg);
+  }
+
+  .attributes {
+    padding: 96px 0;
+  }
+
+  .attributes-list {
+    flex-wrap: wrap;
+  }
+
+  .attributes-list-item {
+    width: calc((100% - 24px) / 2);
+    gap: 72px;
+  }
+
+  .attributes-image {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .mobile-heading {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .paragraph {
+    font-weight: 500;
+  }
+
+  .team {
+    padding: 96px 0;
+  }
+
+  .team-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .box {
+    width: 264px;
+  }
+
+  .portfolio {
+    padding: 96px 0;
+  }
+
+  .portfolio-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .footer {
+    height: auto;
+    padding: 96px 108px;
+  }
+
+  .footer-left {
+    margin: 0;
+  }
+
+  .footer-paragraph {
+    width: 264px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .email-form {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .logo-footer {
+    display: block;
+    margin-right: 0;
+  }
+
+  .footer-subscribe {
+    margin: 0;
+  }
+
+  .email-input {
+    opacity: 0.3;
+  }
+
+  .email-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    opacity: 0.6;
+    color: #fff;
+  }
+
+  .modal-box {
+    width: 408px;
+    min-height: 584px;
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .solutions {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/heroimage-tablet@2x.jpg);
+  }
+}
+
+/*--DESKTOP--*/
+
+@media (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .header-container {
+    margin-left: 156px;
+  }
+
+  .contact-menu {
+    display: flex;
+    padding-left: 332px;
+  }
+
+  .link {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .team-list {
+    padding: 0;
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+
+  .portfolio {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 120px 0;
+  }
+
+  .portfolio-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    width: 1128px;
+    margin-left: -180px;
+  }
+
+  .portfolio-box {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .heading-solutions {
+    margin: auto;
+  }
+
+  .solutions {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/heroimage-desktop@1x.jpg);
+    width: 1440px;
+    height: 600px;
+    margin: auto;
+    padding: 188px 0;
+  }
+
+  .attributes {
+    padding: 120px 0;
+  }
+
+  .attributes-image {
+    visibility: visible;
+    background: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .attributes-heading {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: left;
+  }
+
+  .paragraph {
+    width: 264px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+
+  .attributes-list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .footer-left {
+    padding-right: 100px;
+  }
+
+  .email-form {
+    color: #fff;
+  }
+
+  .email-input {
+    color: #fff;
+  }
+}
+
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+  .solutions {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/heroimage-desktop@2x.jpg);
   }
 }
