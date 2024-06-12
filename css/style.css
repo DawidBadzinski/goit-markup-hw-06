@@ -799,9 +799,18 @@ button:focus {
     padding-left: 0;
   }
 
+  .logo-header {
+    text-decoration: none;
+  }
+
+  .logo-footer {
+    text-decoration: none;
+  }
+
   .solutions {
     max-width: 100%;
-    padding: 72px 0;
+    padding-left: 100px;
+    padding-right: 100px;
     height: 432px;
     align-items: center;
     display: flex;
@@ -1136,7 +1145,8 @@ button:focus {
 
   .footer {
     height: auto;
-    padding: 96px 108px;
+    margin: auto;
+    padding-left: 93px;
   }
 
   .footer-left {
