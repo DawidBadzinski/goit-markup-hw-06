@@ -826,19 +826,18 @@ button:focus {
   }
 
   .attributes {
-    padding: 96px 0;
+    padding: 0;
+    padding-bottom: 96px;
   }
 
   .attributes-list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 72px;
   }
 
   .attributes-list-item {
     width: 100%;
-    gap: 72px;
   }
 
   .attributes-image {
@@ -1213,7 +1212,8 @@ button:focus {
   }
 
   .header-container {
-    margin-left: 156px;
+    display: flex;
+    justify-content: center;
   }
 
   .contact-menu {
